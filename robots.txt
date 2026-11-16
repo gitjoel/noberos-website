@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noberos.com/sitemap.xml
