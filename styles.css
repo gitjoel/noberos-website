@@ -92,8 +92,8 @@ h1 {
 
 @media (max-width: 52rem) {
   body { display: block; }
-  .photo { justify-content: flex-start; padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 5vw, 4.5rem) 0; }
-  .photo img { max-width: 13rem; }
+  .photo { display: block; padding: 0; }
+  .photo img { max-width: none; aspect-ratio: 5 / 4; max-height: 50svh; border-radius: 0; }
   .intro { padding: 2rem 0 2.5rem; }
 }
 
