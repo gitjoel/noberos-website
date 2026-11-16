@@ -41,181 +41,33 @@
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- One-screen site: portrait + intro. The photo comes first in the code so it lands on top on mobile;
+       on desktop CSS places it on the right. -->
+  <div class="photo">
+    <img src="assets/joel-roos.jpg" alt="Portrait of Joel Roos" width="731" height="900">
+  </div>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#top" aria-label="Noberos – Joel Roos, home">
-        <span class="brand-mark"><img src="assets/noberos-logo.png" alt="" width="40" height="40"></span>
-        <span class="brand-name">Joel Roos</span>
-      </a>
-      <nav aria-label="Main">
-        <ul class="nav">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <main class="text">
+    <a class="brand" href="/" aria-label="Noberos – Joel Roos, home">
+      <span class="brand-mark"><img src="assets/noberos-logo.png" alt="" width="40" height="40"></span>
+      <span class="brand-name">Joel Roos</span>
+    </a>
+
+    <div class="intro">
+      <p class="eyebrow">Management Consultant</p>
+      <h1>An independent advisor for commercial transformation.</h1>
+      <p class="lead">I help leadership teams get value from CRM, Martech and AI, with the operating models and sales processes that make technology pay off.</p>
+      <p class="lead-sub">12+ years of experience, including Accenture Strategy &amp; Consulting. Dividing my time between Geneva and Stockholm, working with clients in both countries.</p>
+      <p class="actions">
+        <a class="btn btn-primary js-email" href="https://www.linkedin.com/in/joelro">Get in touch</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/joelro" rel="noopener">LinkedIn</a>
+      </p>
+      <noscript><p class="lead-sub">Email: hello [at] noberos.com</p></noscript>
     </div>
-  </header>
 
-  <main id="main">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-      <div class="wrap hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Joel Roos — Management Consultant</p>
-          <h1>An independent advisor for commercial transformation.</h1>
-          <p class="lead">I help leadership teams get value from CRM, Martech and AI, with the operating models and sales processes that make technology pay off.</p>
-          <p class="lead-sub">12+ years of experience, including Accenture Strategy &amp; Consulting. Dividing my time between Geneva and Stockholm, working with clients in both countries.</p>
-          <p class="actions">
-            <a class="btn btn-primary js-email" href="#contact">Get in touch</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/joelro" rel="noopener">LinkedIn</a>
-          </p>
-        </div>
-        <div class="hero-photo">
-          <img src="assets/joel-roos.jpg" alt="Portrait of Joel Roos" width="731" height="900">
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SERVICES ============ -->
-    <section class="section" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <h2 class="section-title" id="services-title">Services</h2>
-        <div class="services">
-
-          <article class="service">
-            <p class="num" aria-hidden="true">01</p>
-            <h3>CRM &amp; Martech</h3>
-            <p>Strategy, operating model and implementation support. I define the processes, roles and governance that make your platforms deliver, not just go live.</p>
-          </article>
-
-          <article class="service">
-            <p class="num" aria-hidden="true">02</p>
-            <h3>AI Enablement</h3>
-            <p>From first use case to working pilot. I help you find where AI creates real value in sales, marketing and customer service, and get the organization ready to use it.</p>
-          </article>
-
-          <article class="service">
-            <p class="num" aria-hidden="true">03</p>
-            <h3>Sales &amp; Marketing Excellence</h3>
-            <p>Sales processes, segmentation and steering that scale. I also harmonize commercial organizations after mergers or reorganizations.</p>
-          </article>
-
-          <article class="service">
-            <p class="num" aria-hidden="true">04</p>
-            <h3>Cross-Border Expansion</h3>
-            <p>Support for companies growing between Sweden and Switzerland, from market entry planning to a commercial setup that works in both.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE (CASES) ============
-         To add a case: copy one <article class="case">…</article> block,
-         paste it where it should appear, and change the three texts. -->
-    <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="wrap">
-        <h2 class="section-title" id="experience-title">Selected experience</h2>
-        <p class="section-intro">Assignments from my years at Accenture and Cartina. Clients are anonymized.</p>
-        <div class="cases">
-
-          <article class="case">
-            <div class="case-head">
-              <h3>Nordic telecom operator</h3>
-              <p class="role">Operating Model Lead</p>
-            </div>
-            <p class="case-body">Built a Martech operating model (processes, governance and roles) for a team of about 15, enabling 10+ new customer communication use cases. The playbook was adopted across several Nordic markets.</p>
-          </article>
-
-          <article class="case">
-            <div class="case-head">
-              <h3>Top-tier Nordic bank</h3>
-              <p class="role">Project Leader</p>
-            </div>
-            <p class="case-body">Piloted AI-powered voice in customer service and designed integrations with the potential to lift call-handling efficiency by about 40% across millions of yearly interactions.</p>
-          </article>
-
-          <article class="case">
-            <div class="case-head">
-              <h3>Global security services company</h3>
-              <p class="role">Stream Leader</p>
-            </div>
-            <p class="case-body">Designed the sales and marketing processes behind a new CRM and BI suite, replacing 3+ legacy stacks with one global model for one of the world's largest B2B sales forces.</p>
-          </article>
-
-          <article class="case">
-            <div class="case-head">
-              <h3>Top-3 global automotive group</h3>
-              <p class="role">Program Leader</p>
-            </div>
-            <p class="case-body">Led an 18-month digital sales pilot at the group's Swedish retail arm, working with developers, specialists and C-level stakeholders. The platform was later scaled to more markets.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ WHY INDEPENDENT ============ -->
-    <section class="section section-dark" id="why" aria-labelledby="why-title">
-      <div class="wrap">
-        <h2 class="section-title" id="why-title">Why an independent consultant</h2>
-        <div class="reasons">
-          <div class="reason">
-            <h3>Senior from start to finish</h3>
-            <p>The person you meet is the person who does the work.</p>
-          </div>
-          <div class="reason">
-            <h3>Committed to the result</h3>
-            <p>My name is on every delivery.</p>
-          </div>
-          <div class="reason">
-            <h3>Self-driven</h3>
-            <p>I need little steering and fit into your team from day one.</p>
-          </div>
-          <div class="reason">
-            <h3>Cost-efficient</h3>
-            <p>You pay for experience, not for agency overhead.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap about">
-        <h2 class="section-title" id="about-title">About</h2>
-        <div class="about-text">
-          <p>I'm Joel Roos, a management consultant dividing my time between Geneva and Stockholm. At Accenture Strategy &amp; Consulting, most recently as Manager, I led engagements for Nordic and global companies in telecom, banking, retail and security services. Before that I worked in strategy consulting at Cartina and in B2B technology sales in Stockholm and New York.</p>
-          <p>I hold an MBA from Georgetown University's McDonough School of Business and a BA in Business Administration from Uppsala University. I work in English and Swedish.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 class="contact-title" id="contact-title">Let's talk.</h2>
-        <p class="contact-lead">Tell me briefly what you're working on and I'll get back to you.</p>
-        <p class="actions">
-          <a class="btn btn-primary js-email" data-show href="#contact">hello [at] noberos.com</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/joelro" rel="noopener">LinkedIn</a>
-        </p>
-      </div>
-    </section>
-
+    <p class="foot">Noberos AB · Stockholm &amp; Geneva · © 2026 Joel Roos</p>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>Noberos AB · Stockholm &amp; Geneva</p>
-      <p>© 2026 Joel Roos</p>
-    </div>
-  </footer>
   <!-- Builds the email address in the browser so it is not readable in the page source (less spam).
        To change the address, edit the two parts below. -->
   <script>
