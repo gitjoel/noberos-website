@@ -18,7 +18,8 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   min-height: 100vh; min-height: 100svh;
-  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  max-width: 76rem; margin: 0 auto;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--sans);
@@ -32,12 +33,15 @@ a { color: inherit; }
 
 :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
 
-/* ---------- Photo (right half on desktop, top on mobile) ---------- */
-.photo { background: #d9d2c7; min-height: 100%; }
+/* ---------- Photo (right column on desktop, top on mobile) ---------- */
+.photo {
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
 .photo img {
-  width: 100%; height: 100vh; height: 100svh;
+  width: 100%; max-width: 22rem; aspect-ratio: 4 / 5;
   object-fit: cover; object-position: 50% 18%;
-  position: sticky; top: 0;
+  border-radius: 2px;
 }
 
 /* ---------- Text ---------- */
@@ -88,7 +92,8 @@ h1 {
 
 @media (max-width: 52rem) {
   body { display: block; }
-  .photo img { height: 46svh; position: static; }
+  .photo { justify-content: flex-start; padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 5vw, 4.5rem) 0; }
+  .photo img { max-width: 13rem; }
   .intro { padding: 2rem 0 2.5rem; }
 }
 
